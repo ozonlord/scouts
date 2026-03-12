@@ -659,18 +659,11 @@
         }
       });
 
-      function inferTargetAndLocation(freeText) {
-        if (!freeText) return { target: '', location: '' };
-        // simple heuristic: "<target> in <location>"
-        var match = freeText.match(/^\s*([^,]+?)\s+in\s+([^,]+?)\s*$/i);
-        if (!match) return { target: freeText.trim(), location: '' };
-        return { target: (match[1] || '').trim(), location: (match[2] || '').trim() };
-      }
-
       if (form && modalBody && modalSuccess) {
         form.addEventListener('submit', async function (event) {
           event.preventDefault();
 
+          var nameEl = document.getElementById('sample-name');
           var emailEl = document.getElementById('sample-email');
           var serviceEl = document.getElementById('sample-agency');
           var nicheEl = document.getElementById('sample-niche');
@@ -683,34 +676,10 @@
             errorEl.textContent = '';
           }
 
+          var name = nameEl ? nameEl.value.trim() : '';
           var email = emailEl ? emailEl.value.trim() : '';
           var service = serviceEl ? serviceEl.value.trim() : '';
-
-          // Fields from the preview card (used only as a fallback)
-          var previewServiceEl = document.getElementById('preview-service');
-          var previewTargetEl = document.getElementById('preview-target');
-          var previewLocationEl = document.getElementById('preview-location');
-
-          // Default target/location come from the "Ideal clients and locations" textarea
-          var target = '';
-          var location = '';
-          var inferred = inferTargetAndLocation(nicheEl ? nicheEl.value : '');
-          target = inferred.target;
-          location = inferred.location;
-
-          // If user did not provide a service in the form, fall back to preview service
-          if ((!service || service.length === 0) && previewServiceEl && previewServiceEl.value.trim()) {
-            service = previewServiceEl.value.trim();
-          }
-
-          // If user did not provide target/location in the form, fall back to preview target/location
-          if ((!target || target.length === 0) && previewTargetEl && previewTargetEl.value.trim()) {
-            target = previewTargetEl.value.trim();
-          }
-          if ((!location || location.length === 0) && previewLocationEl && previewLocationEl.value.trim()) {
-            location = previewLocationEl.value.trim();
-          }
-
+          var niche = nicheEl ? nicheEl.value.trim() : '';
           var source = sourceEl ? sourceEl.value : 'scouts landing page';
 
           try {
@@ -726,10 +695,10 @@
                 'Accept': 'application/json'
               },
               body: JSON.stringify({
-                email: email,
-                service: service,
-                target: target,
-                location: location,
+                'Name': name,
+                'Work email': email,
+                'Agency or service type': service,
+                'Ideal clients and locations': niche,
                 source: source
               })
             });
