@@ -686,22 +686,29 @@
           var email = emailEl ? emailEl.value.trim() : '';
           var service = serviceEl ? serviceEl.value.trim() : '';
 
-          // Prefer the preview inputs if present (so the modal works well from the preview section)
+          // Fields from the preview card (used only as a fallback)
           var previewServiceEl = document.getElementById('preview-service');
           var previewTargetEl = document.getElementById('preview-target');
           var previewLocationEl = document.getElementById('preview-location');
 
-          var target = previewTargetEl ? previewTargetEl.value.trim() : '';
-          var location = previewLocationEl ? previewLocationEl.value.trim() : '';
+          // Default target/location come from the "Ideal clients and locations" textarea
+          var target = '';
+          var location = '';
+          var inferred = inferTargetAndLocation(nicheEl ? nicheEl.value : '');
+          target = inferred.target;
+          location = inferred.location;
 
-          if (previewServiceEl && previewServiceEl.value.trim()) {
+          // If user did not provide a service in the form, fall back to preview service
+          if ((!service || service.length === 0) && previewServiceEl && previewServiceEl.value.trim()) {
             service = previewServiceEl.value.trim();
           }
 
-          if (!target || !location) {
-            var inferred = inferTargetAndLocation(nicheEl ? nicheEl.value : '');
-            target = target || inferred.target;
-            location = location || inferred.location;
+          // If user did not provide target/location in the form, fall back to preview target/location
+          if ((!target || target.length === 0) && previewTargetEl && previewTargetEl.value.trim()) {
+            target = previewTargetEl.value.trim();
+          }
+          if ((!location || location.length === 0) && previewLocationEl && previewLocationEl.value.trim()) {
+            location = previewLocationEl.value.trim();
           }
 
           var source = sourceEl ? sourceEl.value : 'scouts landing page';
