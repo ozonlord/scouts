@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scouts — Find companies that likely need your services</title>
+  <meta name="description" content="Scouts helps agencies find companies that may need their services. Get targeted lead lists with company names, websites and emails so you can start outreach faster." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Scouts" />
+  <meta property="og:description" content="Find companies that likely need your services." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f172a'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='16' fill='white' font-family='system-ui, -apple-system, BlinkMacSystemFont, sans-serif'%3ES%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-900 text-xs font-semibold text-white">
+          S
+        </div>
+        <span class="text-lg font-semibold tracking-tight text-slate-900">
+          Scouts
+        </span>
+      </div>
+
+      <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <a href="#how-it-works" class="hover:text-slate-900 transition-colors">How it works</a>
+        <a href="#example" class="hover:text-slate-900 transition-colors">Example</a>
+        <a href="#who-its-for" class="hover:text-slate-900 transition-colors">Who it's for</a>
+        <a href="mailto:hello.scouts@proton.me?subject=Question%20about%20Scouts" class="hover:text-slate-900 transition-colors">Contact</a>
+      </nav>
+
+      <button
+         type="button"
+         class="js-open-sample-modal inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+        Request a sample
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-10 sm:py-14 sm:px-6 lg:flex-row lg:items-center lg:py-16 lg:px-8">
+        <div class="flex-1 space-y-6">
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600">
+            <span class="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+            Currently in early access
+          </div>
+
+          <div class="space-y-4">
+            <h1 class="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+              Find companies that likely need your services
+            </h1>
+            <p class="max-w-xl text-base text-slate-700 sm:text-lg">
+              Built for agencies and B2B service teams that want a faster way to find potential clients, get contact details, and start outreach.
+            </p>
+            <p class="max-w-xl text-sm text-slate-600 sm:text-base">
+              Search by niche and location. Get a ready-to-contact list with company names, websites, emails, and outreach angles.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="#final-cta"
+                 class="js-open-sample-modal inline-flex justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+                Request a sample lead list
+              </a>
+              <a href="#example"
+                 class="inline-flex justify-center rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-slate-400 hover:bg-slate-50">
+                See example leads
+              </a>
+            </div>
+            <p class="text-xs text-slate-500 sm:text-sm">
+              We’ll generate a small example list for your niche.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <div class="mx-auto max-w-md rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+            <h2 class="mb-3 text-sm font-semibold text-slate-800">
+              What Scouts helps you do
+            </h2>
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex gap-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-900 text-[11px] font-semibold text-white">1</span>
+                <span>Search by niche, location, and basic criteria you already use when prospecting.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-900 text-[11px] font-semibold text-white">2</span>
+                <span>Receive a short list of companies that may be a practical fit for your services.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-900 text-[11px] font-semibold text-white">3</span>
+                <span>Get websites, emails, and simple opportunity notes you can plug into your outreach.</span>
+              </li>
+            </ul>
+            <div class="mt-5 rounded-xl border border-dashed border-slate-300 bg-white px-4 py-3 text-xs text-slate-600">
+              <p class="font-medium text-slate-800">Early-stage tool</p>
+              <p class="mt-1">
+                We’re working closely with a small number of agencies. Expect a straightforward process and honest feedback loops, not a polished dashboard yet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preview how Scouts works -->
+    <section class="border-b border-slate-200 bg-slate-50/80">
+      <div class="mx-auto max-w-5xl px-4 py-10 sm:py-14 sm:px-6 lg:py-16 lg:px-8">
+        <div class="mb-6 space-y-2 sm:mb-8">
+          <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Preview how Scouts works
+          </h2>
+          <p class="max-w-2xl text-sm text-slate-600 sm:text-base">
+            Try a simple example search and see the kind of lead data you might receive.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-md sm:p-6 lg:p-7">
+          <div class="grid gap-4 md:grid-cols-3">
+            <div class="flex flex-col gap-1.5 text-sm">
+              <label for="preview-service" class="font-medium text-slate-800">Service type</label>
+              <input
+                id="preview-service"
+                type="text"
+                value="SEO agency"
+                class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300" />
+            </div>
+            <div class="flex flex-col gap-1.5 text-sm">
+              <label for="preview-target" class="font-medium text-slate-800">Target business</label>
+              <input
+                id="preview-target"
+                type="text"
+                value="dentists"
+                class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300" />
+            </div>
+            <div class="flex flex-col gap-1.5 text-sm">
+              <label for="preview-location" class="font-medium text-slate-800">Location</label>
+              <input
+                id="preview-location"
+                type="text"
+                value="Berlin"
+                class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300" />
+            </div>
+          </div>
+
+          <div class="mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row sm:items-center sm:justify-between">
+            <p id="preview-context" class="text-xs text-slate-500 sm:text-sm">
+              Example: SEO agency → dentists in Berlin.
+            </p>
+            <button
+              type="button"
+              id="preview-button"
+              class="inline-flex justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+              Preview sample leads
+            </button>
+          </div>
+
+          <div
+            id="preview-results"
+            class="pointer-events-none mt-7 space-y-4 opacity-0 transition-all duration-300 ease-out sm:mt-8"
+          >
+            <div class="grid gap-4 md:grid-cols-3">
+              <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+                <h3 class="text-sm font-semibold text-slate-900">
+                  Mitte Dental Studio
+                </h3>
+                <p class="mt-1">
+                  <a href="https://mittedental.de" target="_blank" rel="noreferrer" class="text-xs text-slate-700 underline-offset-2 hover:underline">
+                    mittedental.de
+                  </a>
+                </p>
+                <p class="mt-1 text-xs text-slate-600">
+                  info@mittedental.de
+                </p>
+                <p class="mt-3 text-xs text-slate-600">
+                  Limited local SEO visibility for dentist-related searches in Berlin.
+                </p>
+              </article>
+
+              <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+                <h3 class="text-sm font-semibold text-slate-900">
+                  Zahnzentrum Friedrichshain
+                </h3>
+                <p class="mt-1">
+                  <a href="https://zf-berlin.de" target="_blank" rel="noreferrer" class="text-xs text-slate-700 underline-offset-2 hover:underline">
+                    zf-berlin.de
+                  </a>
+                </p>
+                <p class="mt-1 text-xs text-slate-600">
+                  kontakt@zf-berlin.de
+                </p>
+                <p class="mt-3 text-xs text-slate-600">
+                  Service pages are limited and could be expanded for better organic search coverage.
+                </p>
+              </article>
+
+              <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+                <h3 class="text-sm font-semibold text-slate-900">
+                  SmileWorks Berlin
+                </h3>
+                <p class="mt-1">
+                  <a href="https://smileworks-berlin.de" target="_blank" rel="noreferrer" class="text-xs text-slate-700 underline-offset-2 hover:underline">
+                    smileworks-berlin.de
+                  </a>
+                </p>
+                <p class="mt-1 text-xs text-slate-600">
+                  hello@smileworks-berlin.de
+                </p>
+                <p class="mt-3 text-xs text-slate-600">
+                  Website structure looks simple and may leave room for SEO and conversion improvements.
+                </p>
+              </article>
+            </div>
+
+            <p class="mt-4 text-xs text-slate-500 sm:text-sm">
+              This is a simplified preview. Sample lists include more lead details and targeting notes.
+            </p>
+
+            <button
+              type="button"
+              class="js-open-sample-modal mt-3 inline-flex justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+              Request a real sample lead list
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Info Strip -->
+    <section class="border-b border-slate-200 bg-slate-50/80">
+      <div class="mx-auto grid max-w-5xl gap-4 px-4 py-4 text-sm text-slate-700 sm:grid-cols-3 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+          <span class="h-2 w-2 rounded-full bg-slate-900"></span>
+          <span class="font-medium">Find relevant companies</span>
+        </div>
+        <div class="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+          <span class="h-2 w-2 rounded-full bg-slate-900"></span>
+          <span class="font-medium">Get contact details</span>
+        </div>
+        <div class="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+          <span class="h-2 w-2 rounded-full bg-slate-900"></span>
+          <span class="font-medium">Start outreach faster</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="border-b border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-10 sm:py-14 sm:px-6 lg:py-16 lg:px-8">
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            How it works
+          </h2>
+          <p class="mt-2 max-w-2xl text-sm text-slate-600 sm:text-base">
+            Scouts focuses on a simple flow: understand your niche, find potential matches, and deliver a list you can start using the same day.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+            <div class="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-900 text-xs font-semibold text-white">
+              1
+            </div>
+            <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+              Choose your niche and location
+            </h3>
+            <p class="text-sm text-slate-600">
+              Tell us what services you offer and where you want to find potential clients.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+            <div class="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-900 text-xs font-semibold text-white">
+              2
+            </div>
+            <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+              We find potential matches
+            </h3>
+            <p class="text-sm text-slate-600">
+              We identify companies that may benefit from your services and collect their key details.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+            <div class="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-900 text-xs font-semibold text-white">
+              3
+            </div>
+            <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+              Get a ready-to-contact lead list
+            </h3>
+            <p class="text-sm text-slate-600">
+              Receive company names, websites, emails, and short opportunity notes you can use for outreach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example lead list -->
+    <section id="example" class="border-b border-slate-200 bg-slate-50">
+      <div class="mx-auto max-w-5xl px-4 py-10 sm:py-14 sm:px-6 lg:py-16 lg:px-8">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+              Example lead list
+            </h2>
+            <p class="mt-2 max-w-2xl text-sm text-slate-600 sm:text-base">
+              A simple preview of what you receive.
+            </p>
+          </div>
+          <div class="mt-2">
+            <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600">
+              Example: SEO agency targeting Berlin
+            </span>
+          </div>
+        </div>
+
+        <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-slate-200 text-left">
+              <thead class="bg-slate-50/80">
+                <tr>
+                  <th class="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-600 sm:px-5">
+                    Company
+                  </th>
+                  <th class="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-600 sm:px-5">
+                    Website
+                  </th>
+                  <th class="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-600 sm:px-5">
+                    Email
+                  </th>
+                  <th class="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-600 sm:px-5">
+                    Why they may be a fit
+                  </th>
+                  <th class="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-600 sm:px-5">
+                    Outreach angle
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-sm">
+                <tr class="hover:bg-slate-50/80">
+                  <td class="px-4 py-3 text-slate-900 sm:px-5">
+                    Bergmann Dental
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    <a href="https://bergmanndental.de" target="_blank" rel="noreferrer" class="text-slate-900 underline-offset-2 hover:underline">
+                      bergmanndental.de
+                    </a>
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    info@bergmanndental.de
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    Local SEO visibility looks weak
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    Offer local SEO improvements
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50/80">
+                  <td class="px-4 py-3 text-slate-900 sm:px-5">
+                    Studio Forma
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    <a href="https://studioforma.de" target="_blank" rel="noreferrer" class="text-slate-900 underline-offset-2 hover:underline">
+                      studioforma.de
+                    </a>
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    hello@studioforma.de
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    Website feels outdated
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    Offer redesign / conversion update
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50/80">
+                  <td class="px-4 py-3 text-slate-900 sm:px-5">
+                    Urban Physio Berlin
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    <a href="https://urbanphysio.de" target="_blank" rel="noreferrer" class="text-slate-900 underline-offset-2 hover:underline">
+                      urbanphysio.de
+                    </a>
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    contact@urbanphysio.de
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    Limited landing pages for services
+                  </td>
+                  <td class="px-4 py-3 text-slate-700 sm:px-5">
+                    Offer SEO + landing page support
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="border-t border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-600 sm:px-5 sm:text-sm">
+            Each sample includes company data, contact details, and a brief opportunity note.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section id="who-its-for" class="border-b border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-10 sm:py-14 sm:px-6 lg:py-16 lg:px-8">
+        <div class="mb-6">
+          <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Built for
+          </h2>
+          <p class="mt-2 max-w-2xl text-sm text-slate-600 sm:text-base">
+            Best suited for small teams that already sell through outbound, referrals, or direct client acquisition.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-800 shadow-sm">
+            SEO agencies
+          </span>
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-800 shadow-sm">
+            Digital marketing agencies
+          </span>
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-800 shadow-sm">
+            Web development studios
+          </span>
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-800 shadow-sm">
+            PPC agencies
+          </span>
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-800 shadow-sm">
+            Consultants
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="final-cta" class="bg-slate-50">
+      <div class="mx-auto max-w-5xl px-4 py-10 sm:py-14 sm:px-6 lg:py-16 lg:px-8">
+        <div class="rounded-2xl border border-slate-200 bg-white px-5 py-8 shadow-sm sm:px-8">
+          <h2 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Want to test it with your niche?
+          </h2>
+          <p class="mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
+            We’re currently testing Scouts with a small group of agencies and B2B service teams.
+          </p>
+          <p class="mt-1 max-w-2xl text-sm text-slate-600 sm:text-base">
+            If it looks relevant, we’re happy to generate a sample lead list for you.
+          </p>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <button
+               type="button"
+               class="js-open-sample-modal inline-flex justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+              Request a sample lead list
+            </button>
+            <p class="text-xs text-slate-500 sm:text-sm">
+              No long demo calls. We’ll simply send a sample if it’s a fit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-6 text-xs text-slate-600 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2">
+        <span class="text-sm font-semibold text-slate-900">Scouts</span>
+        <span class="hidden text-slate-400 sm:inline">•</span>
+        <span class="text-xs text-slate-600">
+          Early access — currently testing with a small group of agencies.
+        </span>
+      </div>
+      <div class="text-xs text-slate-600">
+        Contact: <a href="mailto:hello.scouts@proton.me?subject=Question%20about%20Scouts" class="font-medium text-slate-800 underline-offset-2 hover:underline">hello.scouts@proton.me</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sample request modal -->
+  <div
+    id="sample-modal"
+    class="fixed inset-0 z-40 hidden items-center justify-center bg-black/40 px-4 py-6 sm:px-6"
+    aria-hidden="true"
+  >
+    <div class="relative max-w-md grow rounded-2xl border border-slate-200 bg-white p-5 shadow-xl sm:p-6">
+      <button
+        type="button"
+        id="sample-modal-close"
+        class="absolute right-3 top-3 rounded-full p-1 text-slate-400 transition hover:bg-slate-100 hover:text-slate-700"
+        aria-label="Close"
+      >
+        <span class="block h-4 w-4">
+          &#10005;
+        </span>
+      </button>
+
+      <div id="sample-modal-content">
+        <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">
+          Request a sample lead list
+        </h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Share a bit about your agency and the type of leads you want to see. We’ll review and send over a small sample if it’s a fit.
+        </p>
+
+        <form id="sample-form" method="POST" class="mt-4 space-y-3 text-sm">
+          <div>
+            <label for="sample-name" class="mb-1 block font-medium text-slate-800">Name</label>
+            <input
+              id="sample-name"
+              type="text"
+              required
+              class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300" />
+          </div>
+          <div>
+            <label for="sample-email" class="mb-1 block font-medium text-slate-800">Work email</label>
+            <input
+              id="sample-email"
+              type="email"
+              required
+              class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300" />
+          </div>
+          <div>
+            <label for="sample-agency" class="mb-1 block font-medium text-slate-800">Agency or service type</label>
+            <input
+              id="sample-agency"
+              type="text"
+              placeholder="e.g. SEO agency, web studio"
+              class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300" />
+          </div>
+          <div>
+            <label for="sample-niche" class="mb-1 block font-medium text-slate-800">Ideal clients and locations</label>
+            <textarea
+              id="sample-niche"
+              rows="3"
+              placeholder="e.g. dentists in Berlin, B2B SaaS in DACH"
+              class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:bg-white focus:ring-1 focus:ring-slate-300"></textarea>
+          </div>
+
+          <input id="sample-source" type="hidden" value="scouts landing page" />
+
+          <button
+            type="submit"
+            id="sample-submit"
+            class="mt-2 inline-flex w-full justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+            Send request
+          </button>
+
+          <p id="sample-error" class="hidden text-xs text-rose-600"></p>
+        </form>
+      </div>
+
+      <div id="sample-modal-success" class="hidden text-sm">
+        <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">
+          Thanks!
+        </h2>
+        <p class="mt-2 text-sm text-slate-600">
+          If it looks like a good fit, we’ll send a sample lead list shortly.
+        </p>
+        <button
+          type="button"
+          class="mt-4 inline-flex w-full justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+          data-close-success>
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Preview interaction
+      var previewService = document.getElementById('preview-service');
+      var previewTarget = document.getElementById('preview-target');
+      var previewLocation = document.getElementById('preview-location');
+      var previewContext = document.getElementById('preview-context');
+      var previewButton = document.getElementById('preview-button');
+      var previewResults = document.getElementById('preview-results');
+
+      if (previewButton && previewResults && previewService && previewTarget && previewLocation && previewContext) {
+        previewButton.addEventListener('click', function () {
+          var service = previewService.value.trim() || 'your service';
+          var target = previewTarget.value.trim() || 'businesses';
+          var location = previewLocation.value.trim() || 'your region';
+
+          previewContext.textContent = 'Example: ' + service + ' \u2192 ' + target + ' in ' + location + '.';
+
+          previewResults.classList.remove('pointer-events-none');
+          previewResults.classList.remove('opacity-0');
+          previewResults.classList.remove('translate-y-1');
+          // ensure visible
+          previewResults.style.opacity = '1';
+        });
+      }
+
+      // Modal logic
+      var modal = document.getElementById('sample-modal');
+      var modalContent = modal ? modal.querySelector('.max-w-md') : null;
+      var closeBtn = document.getElementById('sample-modal-close');
+      var form = document.getElementById('sample-form');
+      var modalBody = document.getElementById('sample-modal-content');
+      var modalSuccess = document.getElementById('sample-modal-success');
+      var openButtons = document.querySelectorAll('.js-open-sample-modal');
+
+      function openModal() {
+        if (!modal) return;
+        modal.classList.remove('hidden');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.add('hidden');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      if (openButtons.length && modal) {
+        openButtons.forEach(function (btn) {
+          btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            openModal();
+          });
+        });
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          closeModal();
+        });
+      }
+
+      if (modal) {
+        modal.addEventListener('click', function (event) {
+          if (event.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+
+      function inferTargetAndLocation(freeText) {
+        if (!freeText) return { target: '', location: '' };
+        // simple heuristic: "<target> in <location>"
+        var match = freeText.match(/^\s*([^,]+?)\s+in\s+([^,]+?)\s*$/i);
+        if (!match) return { target: freeText.trim(), location: '' };
+        return { target: (match[1] || '').trim(), location: (match[2] || '').trim() };
+      }
+
+      if (form && modalBody && modalSuccess) {
+        form.addEventListener('submit', async function (event) {
+          event.preventDefault();
+
+          var emailEl = document.getElementById('sample-email');
+          var serviceEl = document.getElementById('sample-agency');
+          var nicheEl = document.getElementById('sample-niche');
+          var sourceEl = document.getElementById('sample-source');
+          var submitEl = document.getElementById('sample-submit');
+          var errorEl = document.getElementById('sample-error');
+
+          if (errorEl) {
+            errorEl.classList.add('hidden');
+            errorEl.textContent = '';
+          }
+
+          var email = emailEl ? emailEl.value.trim() : '';
+          var service = serviceEl ? serviceEl.value.trim() : '';
+
+          // Prefer the preview inputs if present (so the modal works well from the preview section)
+          var previewServiceEl = document.getElementById('preview-service');
+          var previewTargetEl = document.getElementById('preview-target');
+          var previewLocationEl = document.getElementById('preview-location');
+
+          var target = previewTargetEl ? previewTargetEl.value.trim() : '';
+          var location = previewLocationEl ? previewLocationEl.value.trim() : '';
+
+          if (previewServiceEl && previewServiceEl.value.trim()) {
+            service = previewServiceEl.value.trim();
+          }
+
+          if (!target || !location) {
+            var inferred = inferTargetAndLocation(nicheEl ? nicheEl.value : '');
+            target = target || inferred.target;
+            location = location || inferred.location;
+          }
+
+          var source = sourceEl ? sourceEl.value : 'scouts landing page';
+
+          try {
+            if (submitEl) {
+              submitEl.disabled = true;
+              submitEl.textContent = 'Sending...';
+            }
+
+            var response = await fetch('https://formspree.io/f/myknjwzb', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify({
+                email: email,
+                service: service,
+                target: target,
+                location: location,
+                source: source
+              })
+            });
+
+            if (!response.ok) {
+              throw new Error('Request failed');
+            }
+
+            modalBody.classList.add('hidden');
+            modalSuccess.classList.remove('hidden');
+          } catch (e) {
+            if (errorEl) {
+              errorEl.textContent = 'Something went wrong. Please try again or email us at hello.scouts@proton.me';
+              errorEl.classList.remove('hidden');
+            }
+          } finally {
+            if (submitEl) {
+              submitEl.disabled = false;
+              submitEl.textContent = 'Send request';
+            }
+          }
+        });
+
+        var closeSuccessBtn = modalSuccess.querySelector('[data-close-success]');
+        if (closeSuccessBtn) {
+          closeSuccessBtn.addEventListener('click', function () {
+            modalSuccess.classList.add('hidden');
+            modalBody.classList.remove('hidden');
+            form.reset();
+            closeModal();
+          });
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
